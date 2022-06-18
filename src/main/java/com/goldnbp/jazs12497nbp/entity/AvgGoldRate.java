@@ -2,7 +2,7 @@ package com.goldnbp.jazs12497nbp.entity;
 
 import java.sql.Timestamp;
 
-public class avgGoldRate {
+public class AvgGoldRate {
 
     private Long id;
     private Metal metal;

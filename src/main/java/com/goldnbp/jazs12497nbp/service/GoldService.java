@@ -1,6 +1,6 @@
 package com.goldnbp.jazs12497nbp.service;
 
-import com.goldnbp.jazs12497nbp.entity.goldRate;
+import com.goldnbp.jazs12497nbp.entity.GoldRate;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -17,7 +17,7 @@ public class GoldService {
         this.restTemplate = restTemplate;
     }
 
-    public goldRate getCurrentGoldRate(){
-        return this.restTemplate.exchange(RATES_URL, HttpMethod.GET, null, goldRate.class).getBody();
+    public GoldRate getCurrentGoldRate(){
+        return this.restTemplate.exchange(RATES_URL + "/", HttpMethod.GET, null, GoldRate.class).getBody();
     }
 }

@@ -2,15 +2,15 @@ package com.goldnbp.jazs12497nbp.entity;
 
 import javax.persistence.Entity;
 
-public class goldRate {
+public class GoldRate {
 
     private String data;
     private double cena;
 
-    public goldRate() {
+    public GoldRate() {
     }
 
-    public goldRate(String data, double cena) {
+    public GoldRate(String data, double cena) {
         this.data = data;
         this.cena = cena;
     }
