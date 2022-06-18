@@ -21,4 +21,10 @@ public class GoldService {
     public GoldRateQueryResult getCurrentGoldRate(){
         return this.restTemplate.exchange(RATES_URL + "/", HttpMethod.GET, null, GoldRateQueryResult.class).getBody();
     }
+
+    public GoldRateQueryResult getGoldRateByDate(String effectiveDate){
+        return this.restTemplate.exchange(RATES_URL + "/" + effectiveDate + "/", HttpMethod.GET, null, GoldRateQueryResult.class).getBody();
+    }
+
+
 }
