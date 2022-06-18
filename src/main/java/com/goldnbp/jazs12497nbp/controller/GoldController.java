@@ -2,7 +2,6 @@ package com.goldnbp.jazs12497nbp.controller;
 
 import com.goldnbp.jazs12497nbp.entity.GoldRateQueryResult;
 import com.goldnbp.jazs12497nbp.service.GoldService;
-import com.goldnbp.jazs12497nbp.entity.GoldRate;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

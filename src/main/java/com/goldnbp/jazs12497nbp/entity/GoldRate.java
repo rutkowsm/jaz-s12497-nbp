@@ -1,8 +1,11 @@
 package com.goldnbp.jazs12497nbp.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import javax.persistence.Entity;
 
-public class GoldRate {
+@JsonDeserialize
+abstract class GoldRate {
 
     private String data;
     private double cena;
