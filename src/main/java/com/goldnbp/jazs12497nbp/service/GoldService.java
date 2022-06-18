@@ -6,13 +6,14 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
+
 @Service
 public class GoldService {
 
     public static final String RATES_URL = "http://api.nbp.pl/api/cenyzlota";
 
     private final RestTemplate restTemplate;
-
 
     public GoldService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
