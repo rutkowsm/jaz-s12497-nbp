@@ -1,6 +1,5 @@
 package com.goldnbp.jazs12497nbp.service;
 
-import com.goldnbp.jazs12497nbp.entity.GoldRate;
 import com.goldnbp.jazs12497nbp.entity.GoldRateQueryResult;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
